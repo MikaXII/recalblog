@@ -12,4 +12,6 @@ WORKDIR /usr/src/app
 
 RUN bundle install
 
-CMD ["jekyll","--watch"]
+EXPOSE 4000
+
+CMD ["jekyll","s","--watch","--host","0.0.0.0"]
